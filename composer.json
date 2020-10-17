@@ -1,0 +1,23 @@
+{
+  "name": "ericsnguyen/micromongo",
+  "description": "description",
+  "minimum-stability": "stable",
+  "type": "library",
+  "keywords": ["ODM", "MongoDB", "Object Document Mapper"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eric s Nguyen",
+      "email": "20120035@student.hut.edu.vn"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "doctrine/annotations": "^1.10",
+    "netresearch/jsonmapper": "^3.1",
+    "ext-mongodb": "*"
+  },
+  "autoload": {
+    "psr-4": { "MicroOdm\\": "lib/MicroOdm/" }
+  }
+}
