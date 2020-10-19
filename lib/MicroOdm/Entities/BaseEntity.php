@@ -8,6 +8,7 @@ use MongoDB\BSON\ObjectId;
 
 abstract class BaseEntity
 {
+    public object $__original;
     // for identity
     protected ?ObjectId $id;
     // time

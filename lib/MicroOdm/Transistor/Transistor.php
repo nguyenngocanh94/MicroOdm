@@ -1,11 +1,11 @@
 <?php
 
-
 namespace MicroOdm\Transistor;
 
 
 use MicroOdm\Annotations\AnnotationReader;
 use MicroOdm\Common\Enum;
+use MicroOdm\Mapper\MapperFactory;
 use MongoDB\BSON\Binary;
 use MongoDB\BSON\Type;
 
@@ -82,7 +82,7 @@ trait Transistor {
      * for change tracking of this object.
      */
     function bsonUnserialize(array $array) {
-        $object = App::jsonMapper()->map((object)$array, $this);
+        $object = MapperFactory::getMapper()->map((object)$array, $this);
         $entity = clone $object;
         $entity->__original = $object;
         return $entity;

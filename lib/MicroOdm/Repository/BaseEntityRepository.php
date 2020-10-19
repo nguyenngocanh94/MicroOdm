@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 
 namespace MicroOdm\Repository;
 
@@ -14,6 +14,7 @@ use MicroOdm\Exceptions\CanNotParseToObjectException;
 use MicroOdm\Exceptions\CanNotUpdateDocException;
 use MicroOdm\Filter\Query;
 use MicroOdm\Aggregate\AggregateQuery;
+use MicroOdm\Mapper\MapperFactory;
 use MongoDB\BSON\ObjectId;
 use MongoDB\Collection;
 use MongoDB\Database;
@@ -94,10 +95,10 @@ abstract class BaseEntityRepository implements IRepository
     }
 
 
-    public function __construct(string $entityClass, Database $database, JsonMapper $mapper)
+    public function __construct(string $entityClass, Database $database)
     {
         $this->_database =$database;
-        $this->mapper = $mapper;
+        $this->mapper = MapperFactory::getMapper();
         $this->_class = $entityClass;
         $this->_entityTable = AnnotationReader::getTableName($this->_class);
         $this->_collection = $this->_database->{$this->_entityTable};
