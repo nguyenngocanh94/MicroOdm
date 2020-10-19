@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "217efd4224670bfe13518fe5aaef7d90",
+    "content-hash": "30e8c8dbd2f5ae8ae9d2d87115313c08",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -154,16 +154,16 @@
         },
         {
             "name": "netresearch/jsonmapper",
-            "version": "v2.1.0",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweiske/jsonmapper.git",
-                "reference": "e0f1e33a71587aca81be5cffbb9746510e1fe04e"
+                "reference": "923d59d40e6468851166ca27f2ed705fd6003146"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/e0f1e33a71587aca81be5cffbb9746510e1fe04e",
-                "reference": "e0f1e33a71587aca81be5cffbb9746510e1fe04e",
+                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/923d59d40e6468851166ca27f2ed705fd6003146",
+                "reference": "923d59d40e6468851166ca27f2ed705fd6003146",
                 "shasum": ""
             },
             "require": {
@@ -196,7 +196,7 @@
                 }
             ],
             "description": "Map nested JSON structures onto PHP classes",
-            "time": "2020-04-16T18:48:43+00:00"
+            "time": "2020-08-15T07:37:48+00:00"
         }
     ],
     "packages-dev": [],

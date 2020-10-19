@@ -14,7 +14,7 @@
   "require": {
     "php": "^7.4",
     "doctrine/annotations": "^1.10",
-    "netresearch/jsonmapper": "^2.1",
+    "netresearch/jsonmapper": "^3.1",
     "ext-mongodb": "^1.5"
   },
   "autoload": {
